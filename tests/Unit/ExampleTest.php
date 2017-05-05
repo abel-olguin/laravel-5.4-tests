@@ -5,18 +5,16 @@ namespace Tests\Unit;
 use App\User;
 use Illuminate\Http\Request;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class ExampleTest extends TestCase
 {
-    use DatabaseTransactions;
+
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testBasicTest()
+    function test_basic_test()
     {
         $user = factory(User::class)->create([
             'name' => 'wea'
